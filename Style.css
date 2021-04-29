@@ -1,10 +1,108 @@
 .header {
-    position: fixed;
+    position: absolute;
     height:auto;
     background-color: white;
     width: 100%;
     display: grid;
     grid-template-columns: 75% 5% 5% 5% 5%;
     justify-items: center;
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
 }
 
+.header-box, #box1, #box2, #box3, #box4 {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 4px;
+}
+
+#options-button {
+    position: relative;
+    top: 3px;
+    border-color:transparent;
+    border: 0px solid;
+}
+
+#options-button:hover {
+    border: 0px solid;
+    border-radius: 50%;
+    border-color: transparent;
+    box-shadow: 0px 0px 10px rgb(131, 130, 130);
+}
+
+.homeimg {
+    padding: 150px 0 0 0;
+}
+
+#googleimg{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#input-box{
+    display:grid;
+    grid-template-columns: 5% 90% 5%;
+    margin: 30px 330px 30px 330px;
+    align-items: center;
+    justify-items: center;
+    padding: 8px 0px 8px 0px;
+    border: 1px solid;
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 23px;
+    border-color: #dcdcdc;
+    box-shadow: 0px 0px 4px #acabab;
+}
+
+#search-bar, #searchbar:focus{
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 31%;
+    margin-top: -17px;
+    border-color:transparent;
+    border: 0px solid;
+    outline: none;
+    width: 480px;
+    text-align: left;
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
+
+#search-icon{
+    position: relative;
+    left: 10px;
+    top: 3px;
+}
+
+#microphone-icon{
+    position: relative;
+    right: 10px;
+    top: 3px;
+}
+
+#signin-button {
+    background-color: rgb(49 116 241);
+    color: white;
+    text-align: center;
+    height: 37px;
+    width: 80px;
+    outline: none;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    left: 15px;
+}
+
+#signin-button:hover {
+    box-shadow: 0px 0px 2px rgb(49 116 241);
+    text-shadow: 0px 0px 0.5px white;
+}
